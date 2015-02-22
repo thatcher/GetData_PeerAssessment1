@@ -14,7 +14,7 @@ Coursera Data Science Specialization Track
 
 > https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-> Summary from https://class.coursera.org/getdata-011/human_grading/view/courses/973498/assessments/3/
+*Summary verbatim from [course assignment](from https://class.coursera.org/getdata-011/human_grading/view/courses/973498/assessments/3/)*
 
 ## Scripts and Resulting Data
 
