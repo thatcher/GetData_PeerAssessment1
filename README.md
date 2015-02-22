@@ -18,7 +18,6 @@ Coursera Data Science Specialization Track
 
 ## Scripts and Resulting Data
 
-* The script to generate the tidy data is **run_analysis.R**
-* The resulting tidy data set is **tidy_final.txt**
-* The codebook describing the resulting data set is **CodeBook.md** which
-can be regenerated with knitr on **CodeBook.Rmd**.
+* The script to generate the tidy data is [run_analysis.R](https://github.com/thatcher/GetData_PeerAssessment1/blob/master/run_analysis.R)
+* The resulting tidy data set is [tidy_final.txt](https://github.com/thatcher/GetData_PeerAssessment1/blob/master/tidy_final.txt)
+* The codebook describing the resulting data set is [CodeBook.md](https://github.com/thatcher/GetData_PeerAssessment1/blob/master/CodeBook.md) which can be regenerated with knitr on [CodeBook.Rmd](https://github.com/thatcher/GetData_PeerAssessment1/blob/master/CodeBook.Rmd).
