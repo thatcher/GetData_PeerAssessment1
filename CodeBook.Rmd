@@ -1,0 +1,53 @@
+# Wearable Computing / Peer Assessments / Getting and Cleaning Data Course Project
+
+
+**Chris Thatcher, February 21, 2015**
+
+> One of the most exciting areas in all of data science right now is wearable computing - see for example [this article](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/) . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
+> http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+> Here [is] the data for the project: 
+
+> https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+> *(Intro from <https://class.coursera.org/getdata-011/human_grading/view/courses/973498/assessments/3/>)*
+
+*This code book documents the steps we took to tidy the publicly available data set
+described by this assignment.*
+
+## Resulting Tidy Data Set
+
+```{r}
+library(data.table)
+
+average_activity_values = fread('tidy_final.txt')
+```
+
+The final tidy data set contains ```r length(names(average_activity_values))``` variables,
+one identifying the subject, **subject**, one identifying the activity, **activity**,
+and the remaining variables are the averages, aggregated by subject and activity,
+of the mean and standard deviations as recorded in the original data set.
+
+Additional information about how the data was original collected is available inside
+the data source zip https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+and at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+
+## A Summary of the columns
+
+There are no NA values in any columns.
+
+```{r}
+summary(average_activity_values)
+```
+
+## All variables and their types.
+
+Aside from **subject** and **activity** which are integer and factor respectivly,
+all other columns are numeric.
+
+```{r}
+str(average_activity_values)
+```
+
+
