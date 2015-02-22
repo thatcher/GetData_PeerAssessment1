@@ -31,14 +31,6 @@ Additional information about how the data was original collected is available in
 the data source zip https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 and at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
-## A Summary of the columns
-
-There are no NA values in any columns.
-
-```{r}
-summary(average_activity_values)
-```
-
 ## All variables and their types.
 
 Aside from **subject** and **activity** which are integer and factor respectivly,
@@ -49,3 +41,10 @@ str(average_activity_values)
 ```
 
 
+## A Summary of the columns
+
+There are no NA values in any columns.
+
+```{r}
+summary(average_activity_values)
+```
